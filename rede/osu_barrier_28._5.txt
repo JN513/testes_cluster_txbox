@@ -1,0 +1,3 @@
+# MPI Barrier Latency Test
+# Size [B]        Latency [us]
+0                      2226.11
