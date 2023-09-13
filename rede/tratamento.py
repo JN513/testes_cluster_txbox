@@ -8,14 +8,15 @@ FILES_PREFIXS = [
     "osu_multi_lat",
     "osu_scatter"
 ]
-    
+
 FILES_BATTERIES = [
-    8, 12, 16, 20, 24, 28, 32,
+    4, 8, 12, 16, 20, 24, 28, 32,
 ]
 
 CSV_PATH = "csvs"
-    
+
 NUM_ROUNDS = 5
+
 
 def get_values(lines: list[str]) -> list[str]:
     values: list[str] = []
@@ -28,6 +29,7 @@ def get_values(lines: list[str]) -> list[str]:
 
     return values
 
+
 def get_header(lines: list[str]) -> list[str]:
     header: list[str] = []
 
@@ -38,6 +40,7 @@ def get_header(lines: list[str]) -> list[str]:
         header.append(i[0])
 
     return header
+
 
 for i in FILES_PREFIXS:
     for j in FILES_BATTERIES:
@@ -65,4 +68,3 @@ for i in FILES_PREFIXS:
             file.close()
 
         csv.close()
-
